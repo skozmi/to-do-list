@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+
+body {
+  margin: 0 auto;
+  padding: 3px;
+  background-color: #fff;
+}
+
+header, main, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex-direction: column;
+}
+
+.add-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 15vmin;
+  background: #608aff;
+  border-radius: 1vmin;
+  box-shadow: 0px 2px 4px rgba(44,62,80, 0.15);
+}
+
+.add-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 10vmin;
+  background:#82a2e8;
+  border-radius: 2vmin;
+  box-shadow: 0px 2px 4px rgba(44,62,80, 0.15);
+}
+
+#add-text {
+  width: 50%;
+  float: left;
+  background: rgba(255,255,255,0.2);
+  color: rgb(255,255,255);
+  border-radius: 2vmin;
+  box-shadow: none;
+  outline: none;
+  height: 5vmin;
+  padding: 0 1vmin 0 1vmin;
+}
+
+#add-text::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.75);
+}
+
+#addBtn {
+  height: 6vmin;
+  width: 6vmin;
+  background: #fff;
+  border-radius: 3vmin;
+  margin-left: 1vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addBtn img {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+.to-do-list {
+  margin: 5vmin;
+  padding: 5vmin;
+  width: 75%;
+}
+  
+ul {
+  list-style-type: none;
+}
+
+li {
+  height: 5vmin;
+  margin: 5vmin 0 5vmin 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wordDiv, .wordDivSelected {
+  padding: 2vmin 15vmin;
+  border: solid 0.5vmin #82a2e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vmin;
+  width: 25%;
+  font-size: 1.5em;
+}
+
+.wordDivSelected {
+  border: solid 0.5vmin #00840c
+}
+
+.wordDiv:hover, .wordDivSelected:hover {
+  background: gray;
+  color: #fff;
+}
+
+.up, .down, .remove {
+  height: 6vmin;
+  width: 6vmin;
+  background: #fff;
+  border-radius: 3vmin;
+  margin-left: 1vmin;
+}
+
+
+.bulletImg {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+@media screen and (max-width: 800px) {
+  #addBtn img {
+    width: 3vmin;
+    height: 3vmin;
+  }
+
+  .to-do-list {
+    margin: 4vmin;
+    padding: 4vmin;
+    width: 80%;
+  }
+
+  li {
+    height: 5vmin;
+    margin: 5vmin 0 5vmin 0;
+  }
+
+  .wordDiv, .wordDivSelected {
+    padding: 1vmin 8vmin;
+    margin: 1vmin;
+    width: 25%;
+  }
+  
+  .up, .down, .remove {
+    height: 5vmin;
+    width: 5vmin;
+  }
+  
+  .bulletImg {
+    width: 4vmin;
+    height: 4vmin;
+  }
+
+}
